@@ -1,5 +1,5 @@
 import { Github, Wand2 } from "lucide-react";
-import { Button } from "./components/ui/button";
+import { Button, buttonVariants } from "./components/ui/button";
 import { Separator } from "./components/ui/separator";
 import { Textarea } from "./components/ui/textarea";
 import { Label } from "./components/ui/label";
@@ -44,10 +44,13 @@ export function App() {
 
           <Separator orientation="vertical" className="h-6" />
 
-          <Button variant={"outline"}>
+          <a
+            className={buttonVariants({ variant: "outline" })}
+            href="https://github.com/hugos94/upload-ai"
+          >
             <Github className="w-4 h-4 mr-2"></Github>
             Github
-          </Button>
+          </a>
         </div>
       </div>
 
